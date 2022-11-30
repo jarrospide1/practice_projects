@@ -10,6 +10,7 @@ img {
 }
 
 .photo_shrinked {
+    transition: width 1s;
     width: 100px;
     margin: 0 10px;
     border-radius: 10px;
@@ -17,5 +18,6 @@ img {
 }
 
 .photo_expanded {
+    transition: width 1s;
     width: 300px;
 }
