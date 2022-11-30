@@ -13,7 +13,3 @@ function removeClass() {
         image.classList.remove("photo_expanded")
     })
 }
-
-// function addText() {
-//     switch
-// }
