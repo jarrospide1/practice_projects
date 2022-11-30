@@ -1,0 +1,21 @@
+.img_wrapper {
+    display: flex;
+    width: 100%;
+    /*justify-content: space-between;*/
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.photo_shrinked {
+    width: 100px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.photo_expanded {
+    width: 300px;
+}
