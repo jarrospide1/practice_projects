@@ -53,5 +53,63 @@ img {
 
 .image.photo_expanded h2 {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
+
+/* Night view */
+
+.theme-handler {
+    margin-bottom: 5%;
+}
+
+.night-background {
+    background-color: rgb(0, 0, 0);
+    transition: background-color 1s;
+}
+
+.ligth-background {
+    background-color: #fff;
+    transition: background-color 1s;
+}
+
+.hide {
+    display: none;
+}
+
+label {
+    width: 80px;
+    height: 30px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4) inset 0px -5px 15px rgba(255, 255, 255,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    margin: auto;
+}
+label:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top:2px;
+    left:5px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;    
+}
+input:checked + label {
+    background: #242424;
+}
+input:checked + label:after {
+    left: 70px;
+    transform: translateX(-100%);
+    background-color: linear-gradient(180deg, #777, #3a3a3a);
+}
+
